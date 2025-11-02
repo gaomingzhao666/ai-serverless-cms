@@ -6,6 +6,16 @@ export default defineNuxtConfig({
 	content: {
 		experimental: { nativeSqlite: true },
 	},
+	app: {
+		head: {
+			meta: [
+				{
+					name: 'robots',
+					content: 'noindex',
+				},
+			],
+		},
+	},
 
 	modules: ['@nuxt/content', '@nuxt/image', '@nuxt/test-utils', '@nuxt/ui'],
 })
