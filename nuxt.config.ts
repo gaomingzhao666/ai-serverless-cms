@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
 	compatibilityDate: '2025-07-15',
 	ssr: true,
+	css: ['~/assets/css/main.css'],
 
 	content: {
 		experimental: { nativeSqlite: true },
